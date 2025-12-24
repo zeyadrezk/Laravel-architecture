@@ -488,22 +488,22 @@ Each child repository contains curated learning resources specific to that archi
 - 📋 Set up repository structure
 - 📋 Define coding standards
 
-### Phase 1: Foundation Repositories (Q1 2025)
+### Phase 1: Foundation Repositories (Q1 2026)
 - [ ] Monolithic Architecture Repository
 - [ ] Layered Architecture Repository
 - [ ] Complete documentation for both
 
-### Phase 2: Intermediate Repositories (Q2 2025)
+### Phase 2: Intermediate Repositories (Q2 2026)
 - [ ] Modular Architecture Repository
 - [ ] Design Patterns Repository
 - [ ] Complete documentation for both
 
-### Phase 3: Advanced Repositories (Q3 2025)
+### Phase 3: Advanced Repositories (Q3 2026)
 - [ ] Microservices Architecture Repository
 - [ ] API Gateway Repository (this repo)
 - [ ] Complete documentation for both
 
-### Phase 4: Enhancements (Q4 2025)
+### Phase 4: Enhancements (Q4 2026)
 - [ ] Video tutorials
 - [ ] Interactive examples
 - [ ] Community contributions
@@ -574,7 +574,7 @@ This project and all child repositories are licensed under the **MIT License**.
 ```
 MIT License
 
-Copyright (c) 2025 Laravel Architecture Learning Hub
+Copyright (c) 2026 Laravel Architecture Learning Hub
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

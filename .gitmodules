@@ -1,0 +1,3 @@
+[submodule "monolithic"]
+	path = monolithic
+	url = https://github.com/zeyadrezk/Monolithic-Architecture-laravel.git

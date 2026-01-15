@@ -45,6 +45,14 @@ laravel-lab/arch (THIS REPO - Parent/Hub)
     └── Repository 5: Microservices Architecture
 ```
 
+## 🐳 Start Here: Docker Setup
+
+New to Docker? Start with this beginner-friendly starter kit:
+
+**[Laravel Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter)** - Learn how to containerize Laravel with PHP, Nginx, MySQL, and Redis.
+
+---
+
 ## 📚 Child Repositories
 
 Each repository is a complete, standalone Laravel project with full documentation.
@@ -191,6 +199,7 @@ Each repository is a complete, standalone Laravel project with full documentatio
 
 | # | Repository | Architecture Type | Key Concepts | Difficulty | Status |
 |---|------------|-------------------|--------------|------------|--------|
+| 0 | [Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter) | Docker Setup | Docker, Nginx, MySQL, Redis | ⭐ Beginner | ✅ Ready |
 | 1 | Monolithic | Single Deployment | DTO, DDD, Services | ⭐⭐ Beginner | 📋 Planned |
 | 2 | Layered | Horizontal Layers | DTO, Clean Arch | ⭐⭐ Beginner | 📋 Planned |
 | 3 | Modular | Bounded Contexts | Modules, Isolation | ⭐⭐⭐ Intermediate | 📋 Planned |
@@ -525,6 +534,7 @@ Each child repository will progress through these stages:
 
 | Repository | Planning | Development | Documentation | Tests | Status |
 |------------|----------|-------------|---------------|-------|--------|
+| [Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter) | ✅ | ✅ | ✅ | - | ✅ Ready |
 | Monolithic | ✅ | 📋 | 📋 | 📋 | Planned |
 | Layered | ✅ | 📋 | 📋 | 📋 | Planned |
 | Modular | ✅ | 📋 | 📋 | 📋 | Planned |

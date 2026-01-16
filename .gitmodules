@@ -1,3 +1,6 @@
 [submodule "monolithic"]
 	path = monolithic
 	url = https://github.com/zeyadrezk/Monolithic-Architecture-laravel.git
+[submodule "docker-starter"]
+	path = docker-starter
+	url = https://github.com/zeyadrezk/laravel-docker-starter

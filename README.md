@@ -36,7 +36,8 @@ This is the **parent repository** that organizes and links to multiple child rep
 
 ```
 laravel-lab/arch (THIS REPO - Parent/Hub)
-├── docker-starter/          # 🐳 Git Submodule - Docker setup for Laravel
+├── docker-starter/          # 🐳 Git Submodule - Custom Docker setup (PHP, Nginx, MySQL, Redis)
+├── sail-starter/            # ⛵ Git Submodule - Laravel Sail setup (Official Docker solution)
 ├── API Gateway Implementation
 └── Links to Child Repositories:
     ├── Repository 1: Monolithic Architecture
@@ -48,30 +49,57 @@ laravel-lab/arch (THIS REPO - Parent/Hub)
 
 ## 🐳 Start Here: Docker Setup
 
-New to Docker? Start with this beginner-friendly starter kit:
+New to Docker? We have two beginner-friendly starter kits to choose from:
 
-**[Laravel Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter)** - Learn how to containerize Laravel with PHP, Nginx, MySQL, and Redis.
+### Option 1: Custom Docker Setup (docker-starter)
 
-### Included as Submodule
+**[Laravel Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter)** - Learn how to containerize Laravel with custom Dockerfile, PHP-FPM, Nginx, MySQL, and Redis.
 
-The Docker Starter is included in this repository as a Git submodule in the `docker-starter/` directory. To get started:
+**Best for:** Understanding Docker internals, custom configurations, production-like setup.
+
+```bash
+cd docker-starter
+cp .env.example .env
+make setup
+```
+
+See full documentation: [docker-starter/README.md](./docker-starter/README.md)
+
+### Option 2: Laravel Sail (sail-starter)
+
+**[Laravel Sail Starter](https://github.com/zeyadrezk/laravel-sail-starter)** - Learn Laravel's official Docker development environment with simple `sail` commands.
+
+**Best for:** Quick setup, Laravel's official solution, easy-to-use commands.
+
+```bash
+cd sail-starter
+sail up -d
+sail artisan migrate
+```
+
+See full documentation: [sail-starter/README.md](./sail-starter/README.md)
+
+### Comparison Table
+
+| Feature | Docker Starter | Sail Starter |
+|---------|---------------|--------------|
+| Setup Complexity | Medium | Easy |
+| Customization | High | Medium |
+| Learning Docker | Deep dive | Basic |
+| Official Laravel | No | Yes |
+| Production Ready | Yes | Development only |
+
+### Getting the Submodules
+
+Both starters are included as Git submodules:
 
 ```bash
 # Clone with submodules
 git clone --recurse-submodules https://github.com/zeyadrezk/laravel-architecture-hub.git
 
-# Or if you already cloned, initialize the submodule
+# Or if you already cloned, initialize the submodules
 git submodule update --init --recursive
-
-# Navigate to docker-starter
-cd docker-starter
-
-# Follow the setup instructions
-cp .env.example .env
-make setup
 ```
-
-See the full documentation in [docker-starter/README.md](./docker-starter/README.md).
 
 ---
 
@@ -221,7 +249,8 @@ Each repository is a complete, standalone Laravel project with full documentatio
 
 | # | Repository | Architecture Type | Key Concepts | Difficulty | Status |
 |---|------------|-------------------|--------------|------------|--------|
-| 0 | [Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter) | Docker Setup | Docker, Nginx, MySQL, Redis | ⭐ Beginner | ✅ Ready |
+| 0a | [Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter) | Custom Docker | Docker, Nginx, MySQL, Redis | ⭐ Beginner | ✅ Ready |
+| 0b | [Sail Starter](https://github.com/zeyadrezk/laravel-sail-starter) | Laravel Sail | Sail, Docker, Artisan | ⭐ Beginner | ✅ Ready |
 | 1 | Monolithic | Single Deployment | DTO, DDD, Services | ⭐⭐ Beginner | 📋 Planned |
 | 2 | Layered | Horizontal Layers | DTO, Clean Arch | ⭐⭐ Beginner | 📋 Planned |
 | 3 | Modular | Bounded Contexts | Modules, Isolation | ⭐⭐⭐ Intermediate | 📋 Planned |
@@ -273,7 +302,7 @@ Pick a repository based on your skill level:
 
 ### Step 2: Clone the Repository
 ```bash
-# Clone this hub with included submodules (docker-starter)
+# Clone this hub with included submodules (docker-starter, sail-starter)
 git clone --recurse-submodules https://github.com/zeyadrezk/laravel-architecture-hub.git
 
 # Or clone a specific child repository you want to learn
@@ -560,6 +589,7 @@ Each child repository will progress through these stages:
 | Repository | Planning | Development | Documentation | Tests | Status |
 |------------|----------|-------------|---------------|-------|--------|
 | [Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter) | ✅ | ✅ | ✅ | - | ✅ Ready |
+| [Sail Starter](https://github.com/zeyadrezk/laravel-sail-starter) | ✅ | ✅ | ✅ | - | ✅ Ready |
 | Monolithic | ✅ | 📋 | 📋 | 📋 | Planned |
 | Layered | ✅ | 📋 | 📋 | 📋 | Planned |
 | Modular | ✅ | 📋 | 📋 | 📋 | Planned |

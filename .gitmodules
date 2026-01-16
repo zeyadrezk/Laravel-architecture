@@ -5,3 +5,6 @@
 	path = docker-starter
 	url = https://github.com/zeyadrezk/laravel-docker-starter
 	branch = main
+[submodule "sail-starter"]
+	path = sail-starter
+	url = https://github.com/zeyadrezk/laravel-sail-starter.git

@@ -36,6 +36,7 @@ This is the **parent repository** that organizes and links to multiple child rep
 
 ```
 laravel-lab/arch (THIS REPO - Parent/Hub)
+├── docker-starter/          # 🐳 Git Submodule - Docker setup for Laravel
 ├── API Gateway Implementation
 └── Links to Child Repositories:
     ├── Repository 1: Monolithic Architecture
@@ -50,6 +51,27 @@ laravel-lab/arch (THIS REPO - Parent/Hub)
 New to Docker? Start with this beginner-friendly starter kit:
 
 **[Laravel Docker Starter](https://github.com/zeyadrezk/laravel-docker-starter)** - Learn how to containerize Laravel with PHP, Nginx, MySQL, and Redis.
+
+### Included as Submodule
+
+The Docker Starter is included in this repository as a Git submodule in the `docker-starter/` directory. To get started:
+
+```bash
+# Clone with submodules
+git clone --recurse-submodules https://github.com/zeyadrezk/laravel-architecture-hub.git
+
+# Or if you already cloned, initialize the submodule
+git submodule update --init --recursive
+
+# Navigate to docker-starter
+cd docker-starter
+
+# Follow the setup instructions
+cp .env.example .env
+make setup
+```
+
+See the full documentation in [docker-starter/README.md](./docker-starter/README.md).
 
 ---
 
@@ -251,7 +273,10 @@ Pick a repository based on your skill level:
 
 ### Step 2: Clone the Repository
 ```bash
-# Clone the child repository you want to learn
+# Clone this hub with included submodules (docker-starter)
+git clone --recurse-submodules https://github.com/zeyadrezk/laravel-architecture-hub.git
+
+# Or clone a specific child repository you want to learn
 git clone [repository-url]
 cd [repository-name]
 ```
@@ -542,7 +567,7 @@ Each child repository will progress through these stages:
 | Microservices | ✅ | 📋 | 📋 | 📋 | Planned |
 | API Gateway | ✅ | 📋 | 📋 | 📋 | Planned |
 
-**Last Updated:** December 24, 2025
+**Last Updated:** January 16, 2026
 
 ---
 

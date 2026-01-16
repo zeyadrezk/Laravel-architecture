@@ -4,3 +4,4 @@
 [submodule "docker-starter"]
 	path = docker-starter
 	url = https://github.com/zeyadrezk/laravel-docker-starter
+	branch = main

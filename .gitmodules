@@ -8,3 +8,4 @@
 [submodule "sail-starter"]
 	path = sail-starter
 	url = https://github.com/zeyadrezk/laravel-sail-starter.git
+	branch = main

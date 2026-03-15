@@ -39,12 +39,14 @@ laravel-lab/arch (THIS REPO - Parent/Hub)
 ├── docker-starter/          # 🐳 Git Submodule - Custom Docker setup (PHP, Nginx, MySQL, Redis)
 ├── sail-starter/            # ⛵ Git Submodule - Laravel Sail setup (Official Docker solution)
 ├── API Gateway Implementation
-└── Links to Child Repositories:
-    ├── Repository 1: Monolithic Architecture
-    ├── Repository 2: Layered Architecture & DTO
-    ├── Repository 3: Modular Architecture
-    ├── Repository 4: Design Patterns Collection
-    └── Repository 5: Microservices Architecture
+├── Links to Child Repositories:
+│   ├── Repository 1: Monolithic Architecture
+│   ├── Repository 2: Layered Architecture & DTO
+│   ├── Repository 3: Modular Architecture
+│   ├── Repository 4: Design Patterns Collection
+│   └── Repository 5: Microservices Architecture
+└── Packages:
+    └── api-response           # 📦 Standardized API response package
 ```
 
 ## 🐳 Start Here: Docker Setup
@@ -245,6 +247,30 @@ Each repository is a complete, standalone Laravel project with full documentatio
 
 ---
 
+### 📦 Laravel Packages
+
+#### API Response Package
+**Focus:** Standardized, consistent API responses across all your Laravel services
+
+**What You'll Learn:**
+- How to build a Laravel package from scratch
+- ServiceProviders (`register()` vs `boot()`)
+- Publishable config files
+- Auto-discovery via `composer.json`
+- Testing packages with Pest + Orchestra Testbench
+
+**Features:**
+- ✅ `success()`, `error()`, `validationError()` methods
+- ✅ Automatic pagination extraction from `ResourceCollection`
+- ✅ Optional `meta` field on all responses
+- ✅ Configurable JSON keys via published config
+- ✅ Full test coverage
+
+**Repository:** [zeyadrezk/api-response](https://github.com/zeyadrezk/api-response)
+**Status:** ✅ Complete
+
+---
+
 ## 📋 Quick Reference Table
 
 | # | Repository | Architecture Type | Key Concepts | Difficulty | Status |
@@ -257,6 +283,7 @@ Each repository is a complete, standalone Laravel project with full documentatio
 | 4 | Design Patterns | Various Patterns | GoF Patterns | ⭐⭐⭐ Intermediate | 📋 Planned |
 | 5 | Microservices | Distributed | Events, Services | ⭐⭐⭐⭐ Advanced | 📋 Planned |
 | 6 | API Gateway | Routing & Aggregation | Gateway Pattern | ⭐⭐⭐⭐ Advanced | 📋 Planned |
+| 📦 | [API Response](https://github.com/zeyadrezk/api-response) | Laravel Package | Package Dev, Config, Testing | ⭐⭐ Beginner | ✅ Ready |
 
 ---
 
@@ -596,8 +623,9 @@ Each child repository will progress through these stages:
 | Design Patterns | ✅ | 📋 | 📋 | 📋 | Planned |
 | Microservices | ✅ | 📋 | 📋 | 📋 | Planned |
 | API Gateway | ✅ | 📋 | 📋 | 📋 | Planned |
+| [API Response Package](https://github.com/zeyadrezk/api-response) | ✅ | ✅ | ✅ | ✅ | ✅ Ready |
 
-**Last Updated:** January 16, 2026
+**Last Updated:** March 15, 2026
 
 ---
 
